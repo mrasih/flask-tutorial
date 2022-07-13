@@ -14,26 +14,26 @@ $ pip install virtualenv
 ```
 
 2. Open a terminal in the project root directory
-3. create virtual environment
+3. Create virtual environment
 ```
 $ virtualenv env
 ```
 
-4. activate environment:
+4. Activate environment:
 ```
 $ .\env\Scripts\activate
 ```
 
-5. install the dependencies:
+5. Install the dependencies:
 ```
 $ (env) pip install -r requirements.txt
 ```
 
-6. start the web server:
+6. Start the web server:
 ```
 $ (env) python app.py
 ```
-
+Note: Change the server port to the one you want
 ```python
 if __name__ == "__main__":
     app.run(debug=True, port=<desired port>)
