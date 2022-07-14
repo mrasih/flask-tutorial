@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flask Tutorial</title>
-    <!--<link rel="stylesheet" href="./style.css">-->
-    <!--<link rel="icon" href="./favicon.ico" type="image/x-icon">-->
-  </head>
-  <body>
-    <main>
-        <h1>Hello World!</h1>  
-    </main>
-	<!--<script src="index.js"></script>-->
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block head %}
+<title>Flask Template</title>
+{% endblock head %}
+{% block body_content %}
+<h1>Hello Template World</h1>
+{% endblock body_content %}
+{% block body_js %}
+{% endblock body_js %}
