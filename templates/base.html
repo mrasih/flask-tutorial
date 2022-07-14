@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="icon" href="./favicon.ico" type="image/x-icon">-->
-    <!--<link rel="stylesheet" href="./style.css">-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrsap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrsap.min.css.map') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% block head %}{% endblock head %}
   </head>
   <body>
     {% block body_content %}{% endblock body_content %}
+    <script type=text/javascript src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.bundle.min.js.map') }}"></script>
+	<script type=text/javascript src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block body_js %}{% endblock body_js %}
-	<!--<script src="index.js"></script>-->
   </body>
 </html>
